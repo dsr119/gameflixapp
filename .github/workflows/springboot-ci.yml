@@ -1,0 +1,43 @@
+name: Spring Boot CI/CD
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-test-and-package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Cache Maven repository
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-m2-
+
+      - name: Build and test with Maven
+        run: mvn -B clean test
+
+      - name: Package application
+        run: mvn -B package -DskipTests
+
+      - name: Upload jar artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: springboot-jar
+          path: |
+            target/*.jar
+
