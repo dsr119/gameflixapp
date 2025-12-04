@@ -2,7 +2,9 @@
 /Users/dougslaptop/Desktop/Gameflix_Final/src/main/java/com/example/gameflix/config/SecurityConfig.java
 /Users/dougslaptop/Desktop/Gameflix_Final/src/main/java/com/example/gameflix/user/User.java
 /Users/dougslaptop/Desktop/Gameflix_Final/src/main/java/com/example/gameflix/GameflixApplication.java
+/Users/dougslaptop/Desktop/Gameflix_Final/src/main/java/com/example/gameflix/movie/Movie.java
 /Users/dougslaptop/Desktop/Gameflix_Final/src/main/java/com/example/gameflix/auth/AuthService.java
 /Users/dougslaptop/Desktop/Gameflix_Final/src/main/java/com/example/gameflix/auth/AuthRequest.java
+/Users/dougslaptop/Desktop/Gameflix_Final/src/main/java/com/example/gameflix/movie/MovieService.java
 /Users/dougslaptop/Desktop/Gameflix_Final/src/main/java/com/example/gameflix/auth/AuthResponse.java
 /Users/dougslaptop/Desktop/Gameflix_Final/src/main/java/com/example/gameflix/user/UserRepository.java
