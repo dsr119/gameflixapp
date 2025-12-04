@@ -1,0 +1,8 @@
+com/example/gameflix/auth/AuthResponse.class
+com/example/gameflix/config/SecurityConfig.class
+com/example/gameflix/GameflixApplication.class
+com/example/gameflix/auth/AuthService.class
+com/example/gameflix/user/UserRepository.class
+com/example/gameflix/user/User.class
+com/example/gameflix/auth/AuthRequest.class
+com/example/gameflix/auth/AuthController.class
